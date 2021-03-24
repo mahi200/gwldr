@@ -1,0 +1,47 @@
+<form id="addChildForm" method="post" action="javascript:null;">
+    <div class="hidden">
+        <input type="number" name="id" title="ID">
+    </div>
+    <div class="form-group">
+        <label class="control-label">Child Name:</label>
+        <input type="text" class="form-control" name="name" placeholder="Name of your child">
+    </div>
+    <div class="form-group">
+        <label class="control-label">Birthday:</label>
+        <select class="form-control" name='year' title="Year"></select>
+        <select class="form-control" name='month' title="Month"></select>
+        <select class="form-control" name='day' title="Day" id="date-data"></select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Gender:</label>
+        <select name="gender" title="Gender" class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Parent Name:</label>
+        <input type="text" class="form-control" name="parent_name" placeholder="Name of child parent">
+    </div>
+    <div class="form-group">
+        <label class="control-label">Parent Email:</label>
+        <input type="text" class="form-control" name="parent_email" placeholder="Email of child parent">
+    </div>
+     <div id="add-phone-div">
+        <div class="form-group">
+            <label class="control-label">Phone number:</label>
+
+            <div class="input-group">
+                 <span class="input-group-addon">+91</span> 
+                <input type="text" class="form-control" name="parent_phone" placeholder="Your phone number">
+            </div>
+        </div>       
+    </div>
+    
+    <div class="modal-footer">
+        <!-- form output -->
+        <div class="text-center text-info well-sm" id="error-box"></div>
+        <!-- modal buttons -->
+        <input type="submit" class="btn btn-primary btn-block" value="Add Child"/>
+    </div>
+</form>

@@ -1,0 +1,24 @@
+{
+  "name": "VaccineForChild",
+  "homepage": "https://dipu-bd.github.io/VaccineForChild",
+  "authors": [
+    "dipu-bd <dipu.sudipta@gmail.com>"
+  ],
+  "description": "Never forget to give vaccine to your child and keep him healthy and happy.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery-validation": "~1.15.0",
+    "font-awesome": "~4.5.0",
+    "chartist": "^0.9.7"
+  }
+}

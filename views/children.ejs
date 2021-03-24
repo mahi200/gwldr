@@ -1,0 +1,64 @@
+<div class="container" id="children-page">
+
+	<div class="navbar navbar-default polaroid">
+		<div class="container-fluid">
+			<div class="navbar-brand">Children registered under you</div>
+			<div class="btn-group navbar-right right-pad navbar-btn">
+				<a class="btn btn-primary" href="#add-child"> <span
+					class="glyphicon glyphicon-plus"></span> Add Child
+				</a>
+				<button class="btn btn-default" id="refreshButton">
+					<span class="glyphicon glyphicon-refresh"></span> Refresh List
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-inline" id="children-list"></div>
+
+	<div class="hidden" id="child-body">
+		<div class='form-group modal-content child-data' id='child-wrapper'>
+			<div class="modal-header">
+				<h3 class="modal-title">
+					<i id="gender" class="fa fa-2x fa-child"></i> <span id="name">Child
+						Name</span>
+				</h3>
+			</div>
+			<div class="modal-body text-left">
+				<table class="table table-responsive">
+					<tr>
+						<th>Age: <i class="fa fa-clock-o"></i></th>
+						<td id="age">10 days old</td>
+					</tr>
+					<tr>
+						<th>Birthday: <i class="fa fa-calendar"></i></th>
+						<td id="dob">Thu 17 Mar, 2016</td>
+					</tr>
+					<tr>
+						<th>Dose Taken: <i class="fa fa-medkit"></i></th>
+						<td id="taken">2.5kg</td>
+					</tr>
+					<tr>
+						<th>Parent: </th>
+						<td id="parent">Parent</td>
+					</tr>
+				</table>
+			</div>
+			<div class="modal-footer height-padding right-pad left-pad">
+				<div class="btn-group pull-left le">
+					<a href="#" id="view" class="btn btn-default"> <i
+						class="fa fa-eye"></i> View
+					</a>
+				</div>
+				<div class="btn-group">
+					<button id="edit" class="btn btn-primary">
+						<i class="fa fa-edit"></i> Edit
+					</button>
+					<button id="delete" class="btn btn-warning">
+						<i class="fa fa-remove"></i> Delete
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= pageTitle %></title>
+
+    <link rel='stylesheet' href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel='stylesheet' href="/bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/bower_components/chartist/dist/chartist.min.css">
+    <link rel='stylesheet' href='/styles/style.css'/>
+</head>
+<body>
+
+<!-- navivation bar -->
+<div id="nav-bar"></div>
+
+<!-- home-body -->
+<div id="home-page"></div>
+
+<!-- bottom bar -->
+<div id="bottom-bar"></div>
+
+<!-- Load scripts -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/bower_components/chartist/dist/chartist.min.js"></script>
+<script src="/scripts/main.js"></script>
+
+<!-- Modal Form -->
+<div id="access-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalContainer">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+                <h4 class="modal-title">Please wait...</h4>
+            </div>
+            <div class="modal-body">
+                <!-- body here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<div class="container" id="users-page">
+    <div class="navbar navbar-default polaroid">
+        <div class="container-fluid">
+            <div class="navbar-brand"> 
+                List of all registered user
+            </div>
+            <div class="navbar-btn btn-group navbar-right right-pad">
+                <button class="btn btn-default" id="refresh-button">
+                    <i class="glyphicon glyphicon-refresh"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-inline" id="user-list">
+        <div class="flex-full">Empty List</div>
+    </div>
+
+    <div class="hidden" id="user-body">
+        <div class="form-group user-data modal-content" id="user-wrapper">
+            <div class="modal-header height-padding right-pad left-pad">
+                <h3 class="modal-title">
+                    <i class="fa fa-2x fa-user-secret" id="access"></i>
+                    <span id="uname"></span>
+                </h3>
+            </div>
+            <div class="modal-body text-left">
+                <table class="table table-condensed">
+                    <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td id="email"></td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td id="address"></td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td id="phone"></td>
+                    </tr>
+                    <tr>
+                        <th>Children</th>
+                        <td id="child-count"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group hidden">
+                    <button class="btn btn-default" id="sms-button">
+                        <i class="fa fa-mobile-phone"></i> Send SMS
+                    </button>
+                    <button class="btn btn-default" id="email-button">
+                        <i class="fa fa-envelope"></i> Send Email
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="admin-button">
+                        <i class="fa fa-lock"></i> Make Admin
+                    </button>
+                    <button class="btn btn-warning" id="delete-button">
+                        <i class="fa fa-remove"></i> Delete User
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

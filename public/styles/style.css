@@ -1,0 +1,206 @@
+/* latin font */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url('/styles/montserrat.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* tag */
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #0f0f0f url("/images/pattern2.jpg");
+}
+
+.ct-chart {
+    width: 810px;
+    height: 410px;
+}
+
+/* class */
+.navbar-inverse {
+    background: url('/images/pattern4.png');
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.polaroid {
+    background: #fffbf3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 5px;
+}
+
+.vaccine-body {
+    background: #eff;
+    margin: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.description-title {
+    padding: 0 0 5px 0;
+    border-bottom: ridge;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description-text {
+    color: #333;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 10px 15px 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.error, #error-box {
+    display: block;
+    font-weight: bold;
+    font-size: small;
+    color: #330;
+}
+
+.user-data {
+    max-width: 350px;
+    background: #def;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 5px;
+}
+
+.child-data {
+    max-width: 300px;
+    background: #dfe;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 5px;
+}
+
+.child-data .modal-header {
+    padding: 8px 15px 7px 15px;
+}
+
+.child-data .modal-body, .user-data .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child-data th {
+    text-align: right;
+    font-weight: bold;
+}
+
+.flex-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-size: large;
+}
+
+.bottom-nav {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.taken-table {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.taken-table th, .taken-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.taken-body {
+    min-height: 500px;
+    min-width: 450px;
+    background: #fff5f5;
+}
+
+#view-child-page {
+    min-height: 400px;
+}
+
+/* id */
+#bottom-panel {
+    margin: 5px 0 0 0;
+    padding: 15px;
+    background: #8c8c9c;
+}
+
+#children-list {
+    min-height: 400px;
+}
+
+#submit-button {
+    padding: 10px 60px 10px 60px;
+}
+
+#register-modal-content {
+    margin-top: 5px;
+    background-image: url('/images/pattern1.jpg');
+}
+
+#profileEditor {
+    padding: 10px;
+    background-image: url('/images/pattern1.jpg');
+}
+
+#general-home-page #dose {
+    font-weight: 600;
+    color: #560;
+}
+
+#general-home-page #vaccine {
+    font-weight: 700;
+    color: #006;
+}
+
+#general-home-page #child {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#general-home-page #from, #general-home-page #fromd {
+    color: #336;
+    font-weight: bold;;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#general-home-page #to, #general-home-page #tod {
+    color: #330;
+    font-weight: bold;;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* padding */
+.no-padding {
+    padding: 0;
+}
+
+.width-padding {
+    padding: 0 10px 0 10px;
+}
+
+.height-padding {
+    padding: 10px 0 10px 0;
+}
+
+.top-pad {
+    padding-top: 10px;
+}
+
+.right-pad {
+    padding-right: 10px;
+}
+
+.bottom-pad {
+    padding-bottom: 10px;
+}
+
+.left-pad {
+    padding-left: 10px;
+}

@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="modal-content" id="profileEditor">
+        <div class="modal-header">
+            <h1 class="left-pad">
+                <span class="glyphicon glyphicon-user"></span> Edit your profile
+                <br/>
+                <small id="profile-header-display"></small>
+            </h1>
+        </div>
+        <div class="modal-body">
+            <form id="profileForm" class="form-horizontal" action="javascript:null;" method="post">
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Username: </label>
+
+                    <div class="col-xs-10">
+                        <input type="text" class="form-control" name="uname" placeholder="Username" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Email: </label>
+
+                    <div class="col-xs-10">
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                               onfocus="$(this).select();"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Full Name: </label>
+
+                    <div class="col-xs-10">
+                        <input type="text" class="form-control" name="name" placeholder="Enter your full name"
+                               onfocus="$(this).select();"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Address: </label>
+
+                    <div class="col-xs-10">
+                        <textarea class="form-control" name="address" placeholder="Enter your full address"
+                                  onfocus="$(this).select();"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">Phone: </label>
+
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" name="phone" placeholder="Your phone number" readonly>
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="btn btn-danger form-control" id="remove-phone-button">Remove</a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#add-phone" class="btn btn-default form-control">Set Phone</a>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center text-info well-sm" id="error-box"></div>
+                    <input type="submit" class="btn btn-primary" value="Save" id="submit-button"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

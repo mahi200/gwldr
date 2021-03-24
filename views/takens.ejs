@@ -1,0 +1,35 @@
+<div class="container" id="takens-page">
+    <div class="thumbnail taken-body">
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                List of all taken doses
+            </div>
+            <div class="navbar-btn navbar-right right-pad">
+                <button class="btn btn-primary" id="edit-button">
+                    <i class="fa fa-edit"></i> Edit
+                </button>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <table id="takens-table" class="table table-bordered taken-table">
+                <thead>
+                <tr>
+                    <th>Vaccines</th>
+                    <th>Doses</th>
+                    <% for(var i = 0; i < user.children.length; ++i) { %>
+                    <th>
+                        <i class="fa fa-2x fa-<%= user.children[i].gender %>"></i>
+                        <%= user.children[i].name %>
+                    </th>
+                    <% } %>
+                </tr>
+                </thead>
+                <tbody id="taken-list">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
